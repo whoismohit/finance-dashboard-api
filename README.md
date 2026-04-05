@@ -26,21 +26,6 @@ A backend REST API built using Django and Django REST Framework for managing fin
 
 ---
 
-## 📂 Project Structure
-finance_dashboard/
-│
-├── users/ # User management & roles
-├── records/ # Financial records CRUD
-├── analytics/ # Summary & analytics APIs
-├── finance_dashboard/ # Project settings
-│
-├── manage.py
-├── requirements.txt
-└── README.md
-
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
@@ -48,6 +33,7 @@ finance_dashboard/
 ```bash
 git clone https://github.com/whoismohit/finance-dashboard-api.git
 cd finance_dashboard
+```
 
 ### 2. Create virtual environment
 python -m venv .venv
@@ -71,12 +57,13 @@ python manage.py runserver
 
 ## 🔐 Authentication (JWT)
 Get Token
+```bash
     POST /api/token/
 {
   "username": "your_username",
   "password": "your_password"
 }
-
+```
 Use Token in Requests
     Authorization: Bearer <access_token>
 
